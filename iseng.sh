@@ -24,17 +24,23 @@ white='\e[1;37m'
 nc="\e[0m"
 red='\e[1;31m'
 yellow='\e[1;33m'
-function load(){
-    echo -e "\n"
-    bar=" >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> "
-    barlength=${#bar}
-    i=0
-    while((i<100)); do
-        n=$((i*barlength / 100))
-        printf "\e[00;32m\r[%-${barlength}s]\e[00m" "${bar:0:n}"
-        ((i += RANDOM%5+2))
-        sleep 0.2
-    done
+clear 
+load(){
+clear
+echo -e $red "MENGHUBUNGKAN..."
+sleep 0.25
+clear
+echo -e $blue "MENGHUBUNGKAN..."
+sleep 0.25
+clear
+echo -e $red "MENGHUBUNGKAN..."
+sleep 0.25
+clear
+echo -e $blue "MENGHUBUNGKAN..."
+sleep 0.25
+clear
+echo -e $red "MENGHUBUNGKAN..."
+sleep 0.25        
 }
 #kontol
 upgrade(){
